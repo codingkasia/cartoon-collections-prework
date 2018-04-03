@@ -19,6 +19,6 @@ end
 def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
   arr.delete_if do |elem|
-    cheese_types.include?(elem)
+    cheese_types.!include?(elem)
   end
 end
